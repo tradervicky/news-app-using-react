@@ -1,23 +1,38 @@
-import logo from './logo.svg';
+import 'bootstrap/dist/css/bootstrap.css';
+import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import './App.css';
+import Finance from './Nav Pages/Finance';
+import Footer from './Nav Pages/Footer';
+import Politics from './Nav Pages/Politics';
+import Sports from './Nav Pages/Sports';
+import Upsc from './Nav Pages/Upsc';
+import Navbar from './Navbar';
+import News from './News';
+import Search from './Nav Pages/Search';
+import Technology from './Nav Pages/Technology';
+import Global from './Nav Pages/Global';
 
 function App() {
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      
+      <BrowserRouter>
+      <Navbar/>
+      <Routes>
+      <Route path='/' element={<News/>}/>
+      <Route path='/upsc' element={<Upsc/>}/>
+      <Route path='/finance' element={<Finance/>}/>
+      <Route path='/sports' element={<Sports/>}/>
+      <Route path='/politics' element={<Politics/>}/>
+      <Route path='/search' element={<Search/>}/>
+      <Route path='/technology' element={<Technology/>}/>
+      <Route path='/global' element={<Global/>}/>
+      </Routes>
+      </BrowserRouter>
+      <Footer/>
+      
     </div>
   );
 }

@@ -1,0 +1,38 @@
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+    height: 100px;
+    align-items: center;
+    background-color: #732ff9;
+    color: white;
+    padding: 0 150px;
+}
+.list-element ul{
+    display: flex;
+    gap: 25px;
+}
+.list-element ul li{
+    list-style: none;
+    cursor: pointer;
+}
+.list-element ul li:hover{
+color: gray;
+}
+.search-box input{
+    padding: 8px 15px;
+    margin-right: 5px;
+    border-radius: 4px;
+}
+.search-box button{
+    padding: 8px 20px;
+    border-radius: 8px;
+    background-color: #198754;
+    color: white;
+    transition: 0.5s ease-in;
+    border: none;
+}
+.search-box button:hover{
+    background-color: #1e573c;
+}
