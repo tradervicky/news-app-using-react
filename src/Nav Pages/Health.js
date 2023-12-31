@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './Common.css'
 
-function Politics() {
+function Health() {
     const [news, setNews] = useState([]);
 
     useEffect(() => {
@@ -46,4 +46,4 @@ function Politics() {
   )
 }
 
-export default Politics
+export default Health
