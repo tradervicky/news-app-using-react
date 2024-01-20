@@ -13,6 +13,7 @@ import Technology from './Nav Pages/Technology';
 import Global from './Nav Pages/Global';
 
 function App() {
+  //Thsi sis a
   
   return (
     <div className="App">
